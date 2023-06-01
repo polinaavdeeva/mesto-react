@@ -9,6 +9,18 @@ function App() {
   const [isEditProfilePopupOpen, setEditProfilePopup] = React.useState(false);
   const [isAddPlacePopupOpen, setisAddPlacePopup] = React.useState(false);
   const [isEditAvatarPopupOpen, setEditAvatarPopupOpen] = React.useState(false);
+  const [selectedCard, setSelectedCard] = React.useState({});
+
+  function closeAllPopups() {
+    setEditAvatarPopupOpen(false);
+    setEditProfilePopup(false);
+    setisAddPlacePopup(false);
+    setSelectedCard({});
+  }
+
+  function handleCardClick(card) {
+    setSelectedCard(card);
+  }
 
   function handleEditAvatarClick() {
     setEditAvatarPopupOpen(true);
@@ -31,6 +43,7 @@ function App() {
           onEditProfile={handleEditProfileClick}
           onEditAvatar={handleEditAvatarClick}
           onAddPlace={handleAddPlaceClick}
+          onCardClick={handleCardClick}
         />
 
         <Footer />
@@ -40,6 +53,7 @@ function App() {
           name="edit"
           buttonText="Сохранить"
           isOpen={isEditProfilePopupOpen}
+          onClose={closeAllPopups}
         >
           <div className="popup__input-container">
             <input
@@ -72,6 +86,7 @@ function App() {
           name="avatar"
           buttonText="Сохранить"
           isOpen={isEditAvatarPopupOpen}
+          onClose={closeAllPopups}
         >
           <div className="popup__input-container">
             <input
@@ -91,8 +106,9 @@ function App() {
           name="add"
           buttonText="Создать"
           isOpen={isAddPlacePopupOpen}
+          onClose={closeAllPopups}
         >
-          <div class="popup__input-container">
+          <div className="popup__input-container">
             <input
               type="text"
               id="popup__text-place-name"
@@ -103,7 +119,7 @@ function App() {
               maxlength="30"
               required
             />
-            <span class="popup__text-error popup__text-place-name-error"></span>
+            <span className="popup__text-error popup__text-place-name-error"></span>
             <input
               type="url"
               id="popup__text-picture-link"
@@ -112,7 +128,7 @@ function App() {
               class="popup__text popup__text_type_picture-link"
               required
             />
-            <span class="popup__text-error popup__text-picture-link-error"></span>
+            <span className="popup__text-error popup__text-picture-link-error"></span>
           </div>
         </PopupWithForm>
 
@@ -122,7 +138,10 @@ function App() {
           buttonText="Да"
         ></PopupWithForm>
 
-        <ImagePopup></ImagePopup>
+        <ImagePopup 
+        card={selectedCard} 
+        onClose={closeAllPopups}
+        ></ImagePopup>
       </div>
     </div>
   );
