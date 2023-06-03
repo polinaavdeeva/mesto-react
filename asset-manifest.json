@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/polinaavdeeva/mesto-react/static/css/main.6ee6eb11.css",
-    "main.js": "/polinaavdeeva/mesto-react/static/js/main.633d9019.js",
-    "static/js/787.5530211c.chunk.js": "/polinaavdeeva/mesto-react/static/js/787.5530211c.chunk.js",
-    "static/media/Inter-Medium.woff": "/polinaavdeeva/mesto-react/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
-    "static/media/Inter-Black.woff": "/polinaavdeeva/mesto-react/static/media/Inter-Black.c6938660eec019fefd68.woff",
-    "static/media/Inter-Regular.woff": "/polinaavdeeva/mesto-react/static/media/Inter-Regular.8c206db99195777c6769.woff",
-    "static/media/Inter-Medium.woff2": "/polinaavdeeva/mesto-react/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
-    "static/media/Inter-Black.woff2": "/polinaavdeeva/mesto-react/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
-    "static/media/Inter-Regular.woff2": "/polinaavdeeva/mesto-react/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
-    "static/media/header-logo.svg": "/polinaavdeeva/mesto-react/static/media/header-logo.03b78ada3425e9132ff3db7ea8f4a6f6.svg",
-    "static/media/like.svg": "/polinaavdeeva/mesto-react/static/media/like.87ed371465c7a6a1cd01.svg",
-    "index.html": "/polinaavdeeva/mesto-react/index.html",
-    "static/media/reset-button.svg": "/polinaavdeeva/mesto-react/static/media/reset-button.823b0cf1b0b7e9cb7cad.svg",
-    "static/media/edit-button.svg": "/polinaavdeeva/mesto-react/static/media/edit-button.8667ac4a523e8fc42e59.svg",
-    "static/media/close-icon.svg": "/polinaavdeeva/mesto-react/static/media/close-icon.2ceb783afbab75916ddc.svg",
-    "static/media/add-button.svg": "/polinaavdeeva/mesto-react/static/media/add-button.d86bb2edc2f6eadb96b7.svg",
-    "main.6ee6eb11.css.map": "/polinaavdeeva/mesto-react/static/css/main.6ee6eb11.css.map",
-    "main.633d9019.js.map": "/polinaavdeeva/mesto-react/static/js/main.633d9019.js.map",
-    "787.5530211c.chunk.js.map": "/polinaavdeeva/mesto-react/static/js/787.5530211c.chunk.js.map"
+    "main.css": "/polinaavdeeva.github.io/mesto-react/static/css/main.d2aa8c55.css",
+    "main.js": "/polinaavdeeva.github.io/mesto-react/static/js/main.d301ccee.js",
+    "static/js/787.5530211c.chunk.js": "/polinaavdeeva.github.io/mesto-react/static/js/787.5530211c.chunk.js",
+    "static/media/Inter-Medium.woff": "/polinaavdeeva.github.io/mesto-react/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff": "/polinaavdeeva.github.io/mesto-react/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff": "/polinaavdeeva.github.io/mesto-react/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "/polinaavdeeva.github.io/mesto-react/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2": "/polinaavdeeva.github.io/mesto-react/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2": "/polinaavdeeva.github.io/mesto-react/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/header-logo.svg": "/polinaavdeeva.github.io/mesto-react/static/media/header-logo.03b78ada3425e9132ff3db7ea8f4a6f6.svg",
+    "static/media/like.svg": "/polinaavdeeva.github.io/mesto-react/static/media/like.87ed371465c7a6a1cd01.svg",
+    "index.html": "/polinaavdeeva.github.io/mesto-react/index.html",
+    "static/media/reset-button.svg": "/polinaavdeeva.github.io/mesto-react/static/media/reset-button.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/edit-button.svg": "/polinaavdeeva.github.io/mesto-react/static/media/edit-button.8667ac4a523e8fc42e59.svg",
+    "static/media/close-icon.svg": "/polinaavdeeva.github.io/mesto-react/static/media/close-icon.2ceb783afbab75916ddc.svg",
+    "static/media/add-button.svg": "/polinaavdeeva.github.io/mesto-react/static/media/add-button.d86bb2edc2f6eadb96b7.svg",
+    "main.d2aa8c55.css.map": "/polinaavdeeva.github.io/mesto-react/static/css/main.d2aa8c55.css.map",
+    "main.d301ccee.js.map": "/polinaavdeeva.github.io/mesto-react/static/js/main.d301ccee.js.map",
+    "787.5530211c.chunk.js.map": "/polinaavdeeva.github.io/mesto-react/static/js/787.5530211c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ee6eb11.css",
-    "static/js/main.633d9019.js"
+    "static/css/main.d2aa8c55.css",
+    "static/js/main.d301ccee.js"
   ]
 }
