@@ -7,7 +7,7 @@ function Card({ card, onCardClick }) {
   }
 
   return (
-    <li key={card._id} className="elements__item">
+    <li className="elements__item">
       <button className="elements__reset-button"></button>
       <img
         className="elements__image"

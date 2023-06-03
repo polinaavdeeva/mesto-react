@@ -7,14 +7,14 @@ import ImagePopup from "./ImagePopup";
 
 function App() {
   const [isEditProfilePopupOpen, setEditProfilePopup] = React.useState(false);
-  const [isAddPlacePopupOpen, setisAddPlacePopup] = React.useState(false);
+  const [isAddPlacePopupOpen, setAddPlacePopup] = React.useState(false);
   const [isEditAvatarPopupOpen, setEditAvatarPopupOpen] = React.useState(false);
   const [selectedCard, setSelectedCard] = React.useState({});
 
   function closeAllPopups() {
     setEditAvatarPopupOpen(false);
     setEditProfilePopup(false);
-    setisAddPlacePopup(false);
+    setAddPlacePopup(false);
     setSelectedCard({});
   }
 
@@ -31,7 +31,7 @@ function App() {
   }
 
   function handleAddPlaceClick() {
-    setisAddPlacePopup(true);
+    setAddPlacePopup(true);
   }
 
   return (
@@ -62,8 +62,8 @@ function App() {
               placeholder="Имя"
               name="userName"
               className="popup__text popup__text_type_name"
-              minlength="2"
-              maxlength="40"
+              minLength="2"
+              maxLength="40"
               required
             />
             <span className="popup__text-error popup__text-name-error"></span>
@@ -73,8 +73,8 @@ function App() {
               placeholder="О себе"
               name="aboutUser"
               className="popup__text popup__text_type_about-oneself"
-              minlength="2"
-              maxlength="200"
+              minLength="2"
+              maxLength="200"
               required
             />
             <span className="popup__text-error popup__text-about-oneself-error"></span>
@@ -114,9 +114,9 @@ function App() {
               id="popup__text-place-name"
               placeholder="Название"
               name="placeName"
-              class="popup__text popup__text_type_place-name"
-              minlength="2"
-              maxlength="30"
+              className="popup__text popup__text_type_place-name"
+              minLength="2"
+              maxLength="30"
               required
             />
             <span className="popup__text-error popup__text-place-name-error"></span>
@@ -125,7 +125,7 @@ function App() {
               id="popup__text-picture-link"
               placeholder="Ссылка на картинку"
               name="imgLink"
-              class="popup__text popup__text_type_picture-link"
+              className="popup__text popup__text_type_picture-link"
               required
             />
             <span className="popup__text-error popup__text-picture-link-error"></span>
@@ -136,12 +136,12 @@ function App() {
           title="Вы уверены?"
           name="delete"
           buttonText="Да"
-        ></PopupWithForm>
+        />
 
         <ImagePopup 
         card={selectedCard} 
         onClose={closeAllPopups}
-        ></ImagePopup>
+        />
       </div>
     </div>
   );

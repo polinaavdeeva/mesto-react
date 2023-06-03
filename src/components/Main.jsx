@@ -8,7 +8,7 @@ function Main({ onEditAvatar, onAddPlace, onEditProfile, onCardClick }) {
   const [userAvatar, setUserAvatar] = React.useState("");
   const [cards, setCards] = React.useState([]);
 
-  const cardsItems = cards.map((card) => <Card card={card} onCardClick={onCardClick}></Card>);
+  const cardsItems = cards.map((card) => <Card key={card._id} card={card} onCardClick={onCardClick}></Card>);
 
   React.useEffect(() => {
     Promise.all([api.getUserInfo(), api.getInitalCards()])

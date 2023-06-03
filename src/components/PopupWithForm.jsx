@@ -10,12 +10,8 @@ function PopupWithForm({ title, name, buttonText, children, isOpen, onClose }) {
           className="popup__close-button"
           type="button"
           onClick={onClose}
-        ></button>
-        <form
-          className={`popup__form popup__${name}-form`}
-          name="editForm"
-          novalidate
-        >
+        />
+        <form className={`popup__form popup__${name}-form`}>
           <h2 className="popup__title">{title}</h2>
           {children}
           <button type="submit" className="popup__save-button">
