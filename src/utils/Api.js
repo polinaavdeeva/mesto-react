@@ -31,8 +31,8 @@ class Api {
                 method: 'PATCH',
                 headers: this._headers,
                 body: JSON.stringify({
-                    name: data['userName'],
-                    about: data['aboutUser']
+                    name: data.name,
+                    about: data.about
                 })
             })
             .then(this._checkResponse)
@@ -43,8 +43,8 @@ class Api {
                 method: 'POST',
                 headers: this._headers,
                 body: JSON.stringify({
-                    name: data['placeName'],
-                    link: data['imgLink']
+                    name: data.name,
+                    link: data.link
                 })
             })
             .then(this._checkResponse)
@@ -63,7 +63,7 @@ class Api {
                 method: 'PATCH',
                 headers: this._headers,
                 body: JSON.stringify({
-                    avatar: data['avatarLink']
+                    avatar: data.avatar
                 })
             })
             .then(this._checkResponse)
