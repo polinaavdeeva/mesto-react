@@ -42,23 +42,35 @@ function App() {
 
     // Отправляем запрос в API и получаем обновлённые данные карточки
     if (!isLiked) {
-      api.putLike(card._id).then((newCard) => {
+      api.putLike(card._id)
+      .then((newCard) => {
         setCards((state) =>
           state.map((c) => (c._id === card._id ? newCard : c))
         );
+      })
+      .catch((error) => {
+        console.log(`Ошибка ${error}`);
       });
     } else {
-      api.deleteLike(card._id).then((newCard) => {
+      api.deleteLike(card._id)
+      .then((newCard) => {
         setCards((state) =>
           state.map((c) => (c._id === card._id ? newCard : c))
         );
+      })
+      .catch((error) => {
+        console.log(`Ошибка ${error}`);
       });
     }
   }
 
   function handleCardDelete(card) {
-    api.deleteCard(card._id).then(() => {
+    api.deleteCard(card._id)
+    .then(() => {
       setCards((cards) => cards.filter((c) => c._id !== card._id));
+    })
+    .catch((error) => {
+      console.log(`Ошибка ${error}`);
     });
   }
 
@@ -79,27 +91,42 @@ function App() {
   }
 
   function handleUpdateUser(userData) {
-    api.editUserInfo(userData).then((data) => {
+    api.editUserInfo(userData)
+    .then((data) => {
       setCurrentUser(data);
+    })
+    .then(()=> {
+      closeAllPopups();
+    })
+    .catch((error) => {
+      console.log(`Ошибка ${error}`);
     });
-
-    closeAllPopups();
   }
 
   function handleUpdateAvatar(userData) {
-    api.editUserAvatar(userData).then((data) => {
+    api.editUserAvatar(userData)
+    .then((data) => {
       setCurrentUser(data);
+    })
+    .then(()=> {
+      closeAllPopups();
+    })
+    .catch((error) => {
+      console.log(`Ошибка ${error}`);
     });
-
-    closeAllPopups();
   }
 
   function handleAddPlaceSubmit(cardData) {
-    api.addNewCard(cardData).then((newCard) => {
+    api.addNewCard(cardData)
+    .then((newCard) => {
       setCards([newCard, ...cards]);
+    })
+    .then(()=> {
+      closeAllPopups();
+    })
+    .catch((error) => {
+      console.log(`Ошибка ${error}`);
     });
-
-    closeAllPopups();
   }
 
   return (
